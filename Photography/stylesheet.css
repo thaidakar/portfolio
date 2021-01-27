@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 100px;
+    background-color: lightskyblue;
+}
+
+.about-me {
+    height: 500px;
+    background-color: red;
+}
+
+.pictures {
+    height: 500px;
+    background-color: yellow;
+}
+
+.footer {
+    height: 200px;
+    background-color: blueviolet;
+}

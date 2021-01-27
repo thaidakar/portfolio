@@ -8,41 +8,105 @@
         background-color: lightskyblue;
         font-size: 20px;
         color: #414141;
-        width: 700px;
-        margin: 2.7em auto;
     }
     
-    .horizontal-nav-bar {
-        position: fixed;
-        top: 0;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+    .menu-container {
+        display: flex;
         background-color: rgb(219, 146, 36);
     }
     
-    .nav-bar {
-        float: left;
+    .menu {
+        flex-direction: row;
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 16px;
     }
     
-    li a {
-        display: block;
+    .menu-item a {
+        padding: 14px 16px;
         color: whitesmoke;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
     }
     
-    li a:active {
+    .menu-item a:active {
         background-color: red;
     }
     
-    li a:hover {
+    .menu-item a:hover {
         background-color: #363656;
         color: whitesmoke;
     }
     
     .active {
         background-color: darkgreen;
+    }
+    
+    .about-me {
+        display: block;
+        float: left;
+        border: 2px solid blue;
+        padding: 100% 100px;
+    }
+    
+    .content {
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        overflow: hidden;
+    }
+    
+    .float-practice {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .quotes {
+        font-size: 15px;
+        display: flex;
+        border: 1px solid black;
+        padding: 10px 45px;
+        margin: 10px;
+        width: max-content;
+    }
+    
+    @media only screen and (max-width: 400px) {
+        body {
+            background-color: #F09A9D;
+            /* Red */
+        }
+        .menu {
+            flex-wrap: wrap;
+        }
+        .menu-item a {
+            float: left;
+            border-bottom: 2px solid white;
+        }
+    }
+    /* Tablet Styles */
+    
+    @media only screen and (min-width: 401px) and (max-width: 720px) {
+        body {
+            background-color: #F5CF8E;
+            /* Yellow */
+        }
+        .menu {
+            flex-wrap: wrap;
+        }
+        .menu-item a {
+            float: left;
+            border-bottom: 2px solid white;
+        }
+    }
+    /* Desktop Styles */
+    
+    @media only screen and (min-width: 721px) {
+        body {
+            background-color: #B2D6FF;
+            /* Blue */
+        }
     }
